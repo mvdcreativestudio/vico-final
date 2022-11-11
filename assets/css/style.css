@@ -320,13 +320,14 @@ input[type=radio]:checked ~ label {
 }
 
 .seccionProductos {
-  margin-left: 5%;
+  margin: 0px 5%;
 }
 
 .cardProducto {
   margin: 15px 0px;
   background-color: var(--color-quinary);
   border-radius: 60px;
+  max-height: 200px;
 }
 
 .tituloProducto {
@@ -363,6 +364,71 @@ input[type=radio]:checked ~ label {
   color: var(--color-primary);
   background-color: transparent;
   border: 2px solid var(--color-primary);
+}
+
+.tituloDetallesRestaurante {
+  font-size: 1.3em;
+  margin-top: 10px;
+  font-weight: bold;
+  color: var(--color-primary);
+  padding: 10px 0px;
+  text-align: left;
+}
+
+.tituloHorarios {
+  font-size: 1.3em;
+  margin-top: 10px;
+  font-weight: bold;
+  color: var(--color-primary);
+  opacity: 60%;
+  padding: 10px 0px;
+  text-align: left;
+}
+
+.contenedorInteriorTarjetaLocal {
+  padding: 0px 40px;
+}
+
+.contenedorHorarios {
+  margin: 0px;
+  padding: 0px;
+}
+
+.diasTarjeta {
+  margin: 0px;
+  padding: 0px;
+  color: var(--color-secondary);
+  font-size: 0.7em;
+}
+
+.horasTarjeta {
+  margin: 0px;
+  padding: 0px;
+  color: var(--color-secondary);
+}
+
+.separadorTarjeta {
+  color: gray;
+  border: solid 0.5px gray;
+  margin: 10px;
+}
+
+.tituloOpinionDeUsuarios {
+  color: var(--color-primary);
+  opacity: 60%;
+  font-size: 0.9em;
+  font-weight: bold;
+  margin: 0px;
+  padding: 0px;
+}
+
+.calificacionOpinionDeUsuarios {
+  font-weight: bold;
+  color: var(--color-secondary);
+}
+
+.estrellaTarjeta {
+  font-size: 1.5em;
 }
 
 .footer {
