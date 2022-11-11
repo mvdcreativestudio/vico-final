@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurante Elegido - VICO</title>
+    <!-- IMPORTS -->
+
+    <!-- BOOTSTRAP -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <!-- CSS -->
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <!-- FONT AWESOME -->
+    <script src="https://kit.fontawesome.com/e221807524.js" crossorigin="anonymous"></script>
+
+    <!-- FIN IMPORTS -->
+
+</head>
+<body>
+    <!-- NAVBAR -->
+    <nav>
+        <div class="nav col-12 d-flex justify-content-between">
+            <!-- LOGO -->
+            <div class="col-3 contenedorLogo d-flex">
+                <img class="navLogo" src="../assets/img/logo_nav.png" alt="">
+
+                <!-- BÚSQUEDA-->
+                <div class="buscador d-flex col-12 align-items-center">
+                    <i class="p-1 fa-solid fa-magnifying-glass"></i>
+                    <input class="col-8" type="text" placeholder="Buscá lo que quieras...">
+                </div>
+                <!-- FIN BÚSQUEDA-->
+
+            </div>
+            <!-- FIN LOGO -->
+
+            <!-- BOTONES -->
+            <div class="contenedorBotonesNav d-flex col-6 justify-content-end">
+                <button class="botonSecundario">Log In</button>
+                <button class="botonPrimario">Registrarme</button>
+            </div>
+            <!-- FIN BOTONES -->
+        </div>
+        <!-- NAVBAR -->
+    </nav>
+
+    <!-- HEADER -->
+    <header>
+        <section>
+            <div class="contenedorHeader">
+                <div class="contenedorTextoHeader d-flex row align-items-end">
+                    <div>
+                        <h1 class="nombreLocalHeader">Grido Moreno</h1>
+                        <h2 class="subtituloLocal mb-3">¡Me encanta!</h2>
+                        <span class="badgeNuevo badge rounded-pill text-bg-primary m-0"> <i class="fa-solid white fa-bolt"></i>Nuevo</span>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+    </header>
+    <!-- FIN HEADER -->
+
+    <main>
+        <!-- SELECCIÓN CATEGORÍAS -->
+        <section class="seleccionCategoria">
+            <div class="d-flex col-12">
+                <h1 class="tituloDark">Categorías</h1>
+                <button class="botonPrimario botonCategorias">Hamburguesas</button>
+                <button class="botonSecundario botonCategorias">Hamburguesas</button>
+                <button class="botonSecundario botonCategorias">Hamburguesas</button>
+                <button class="botonSecundario botonCategorias">Hamburguesas</button>
+                <button class="botonSecundario botonCategorias">Hamburguesas</button>
+                <button class="botonSecundario botonCategorias">Hamburguesas</button>
+            </div>
+        </section>
+        <!-- FIN SELECCIÓN CATEGORÍAS -->
+        <!-- COMBOS CON DESCUENTOS -->
+        <section class="seccionProductos">
+            <div class="d-flex contenedorTituloCategoria">
+                <h4 class="subtituloDark" id="combosConDescuentos">Combos con descuentos</h4>
+                <h4 class="subtituloDark" id="cantidadCombosConDescuentos">(3)</h4>
+            </div>
+            <div class="d-flex row col-8">
+
+                <div class="d-flex col-12 cardProducto">
+                    <div class="contenedorImagenProducto col-3">
+                        <img class="img-fluid" src="../assets/img/burger.png" alt="">
+                    </div>
+                    <div class="contenedorCentralProducto d-flex row align-items-center col-6">
+                        <h2 class="tituloProducto">Picada para 4</h2>
+                        <div>
+                            <p>Hola, esto es una picada para 4 personas que decis...</p>
+                            <p> <a href=""> Leer más</a></p>
+                        </div>
+                        <div class="contenedorPrecioProducto d-flex align-items-center">
+                            <h4 class="precioAntiguo">$4500</h4>
+                            <h4 class="precioNuevo">$3900</h4>
+                            <span class="badgeNuevo badge rounded-pill text-bg-primary m-0"> 20% </span>
+                        </div>
+                    </div>
+                    <div class="contenedorAgregarAlCarrito d-flex justify-content-end align-items-center col-3">
+                        <i class="agregarAlCarrito fa-solid fa-plus"></i>
+                    </div>
+                </div>
+
+
+                <div class="d-flex col-12 cardProducto">
+                    <div class="contenedorImagenProducto col-3">
+                        <img class="img-fluid" src="../assets/img/burger.png" alt="">
+                    </div>
+                    <div class="contenedorCentralProducto d-flex row align-items-center col-6">
+                        <h2 class="tituloProducto">Picada para 4</h2>
+                        <div>
+                            <p>Hola, esto es una picada para 4 personas que decis...</p>
+                            <p> <a href=""> Leer más</a></p>
+                        </div>
+                        <div class="contenedorPrecioProducto d-flex align-items-center">
+                            <h4 class="precioAntiguo">$4500</h4>
+                            <h4 class="precioNuevo">$3900</h4>
+                            <span class="badgeNuevo badge rounded-pill text-bg-primary m-0"> 20% </span>
+                        </div>
+                    </div>
+                    <div class="contenedorAgregarAlCarrito d-flex justify-content-end align-items-center col-3">
+                        <i class="agregarAlCarrito fa-solid fa-plus"></i>
+                    </div>
+                </div>
+
+
+                <div class="d-flex col-12 cardProducto">
+                    <div class="contenedorImagenProducto col-3">
+                        <img class="img-fluid" src="../assets/img/burger.png" alt="">
+                    </div>
+                    <div class="contenedorCentralProducto d-flex row align-items-center col-6">
+                        <h2 class="tituloProducto">Picada para 4</h2>
+                        <div>
+                            <p>Hola, esto es una picada para 4 personas que decis...</p>
+                            <p> <a href=""> Leer más</a></p>
+                        </div>
+                        <div class="contenedorPrecioProducto d-flex align-items-center">
+                            <h4 class="precioAntiguo">$4500</h4>
+                            <h4 class="precioNuevo">$3900</h4>
+                            <span class="badgeNuevo badge rounded-pill text-bg-primary m-0"> 20% </span>
+                        </div>
+                    </div>
+                    <div class="contenedorAgregarAlCarrito d-flex justify-content-end align-items-center col-3">
+                        <i class="agregarAlCarrito fa-solid fa-plus"></i>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FIN COMBOS CON DESCUENTOS -->
+
+        <!-- HAMBURGUESAS -->
+
+        <section class="seccionProductos mt-5">
+            <div class="d-flex contenedorTituloCategoria">
+                <h4 class="subtituloDark" id="hamburguesas">Hamburguesas</h4>
+                <h4 class="subtituloDark" id="cantidadHamburguesas">(4)</h4>
+            </div>
+            <div class="d-flex row col-8">
+
+                <div class="d-flex col-12 cardProducto">
+                    <div class="contenedorImagenProducto col-3">
+                        <img class="img-fluid" src="../assets/img/burger.png" alt="">
+                    </div>
+                    <div class="contenedorCentralProducto d-flex row align-items-center col-6">
+                        <h2 class="tituloProducto">Picada para 4</h2>
+                        <div>
+                            <p>Hola, esto es una picada para 4 personas que decis...</p>
+                            <p> <a href=""> Leer más</a></p>
+                        </div>
+                        <div class="contenedorPrecioProducto d-flex align-items-center">
+                            <h4 class="precioAntiguo">$4500</h4>
+                            <h4 class="precioNuevo">$3900</h4>
+                            <span class="badgeNuevo badge rounded-pill text-bg-primary m-0"> 20% </span>
+                        </div>
+                    </div>
+                    <div class="contenedorAgregarAlCarrito d-flex justify-content-end align-items-center col-3">
+                        <i class="agregarAlCarrito fa-solid fa-plus"></i>
+                    </div>
+                </div>
+
+
+                <div class="d-flex col-12 cardProducto">
+                    <div class="contenedorImagenProducto col-3">
+                        <img class="img-fluid" src="../assets/img/burger.png" alt="">
+                    </div>
+                    <div class="contenedorCentralProducto d-flex row align-items-center col-6">
+                        <h2 class="tituloProducto">Picada para 4</h2>
+                        <div>
+                            <p>Hola, esto es una picada para 4 personas que decis...</p>
+                            <p> <a href=""> Leer más</a></p>
+                        </div>
+                        <div class="contenedorPrecioProducto d-flex align-items-center">
+                            <h4 class="precioAntiguo">$4500</h4>
+                            <h4 class="precioNuevo">$3900</h4>
+                            <span class="badgeNuevo badge rounded-pill text-bg-primary m-0"> 20% </span>
+                        </div>
+                    </div>
+                    <div class="contenedorAgregarAlCarrito d-flex justify-content-end align-items-center col-3">
+                        <i class="agregarAlCarrito fa-solid fa-plus"></i>
+                    </div>
+                </div>
+
+
+                <div class="d-flex col-12 cardProducto">
+                    <div class="contenedorImagenProducto col-3">
+                        <img class="img-fluid" src="../assets/img/burger.png" alt="">
+                    </div>
+                    <div class="contenedorCentralProducto d-flex row align-items-center col-6">
+                        <h2 class="tituloProducto">Picada para 4</h2>
+                        <div>
+                            <p>Hola, esto es una picada para 4 personas que decis...</p>
+                            <p> <a href=""> Leer más</a></p>
+                        </div>
+                        <div class="contenedorPrecioProducto d-flex align-items-center">
+                            <h4 class="precioAntiguo">$4500</h4>
+                            <h4 class="precioNuevo">$3900</h4>
+                            <span class="badgeNuevo badge rounded-pill text-bg-primary m-0"> 20% </span>
+                        </div>
+                    </div>
+                    <div class="contenedorAgregarAlCarrito d-flex justify-content-end align-items-center col-3">
+                        <i class="agregarAlCarrito fa-solid fa-plus"></i>
+                    </div>
+                </div>
+
+
+                <div class="d-flex col-12 cardProducto">
+                    <div class="contenedorImagenProducto col-3">
+                        <img class="img-fluid" src="../assets/img/burger.png" alt="">
+                    </div>
+                    <div class="contenedorCentralProducto d-flex row align-items-center col-6">
+                        <h2 class="tituloProducto">Picada para 4</h2>
+                        <div>
+                            <p>Hola, esto es una picada para 4 personas que decis...</p>
+                            <p> <a href=""> Leer más</a></p>
+                        </div>
+                        <div class="contenedorPrecioProducto d-flex align-items-center">
+                            <h4 class="precioAntiguo">$4500</h4>
+                            <h4 class="precioNuevo">$3900</h4>
+                            <span class="badgeNuevo badge rounded-pill text-bg-primary m-0"> 20% </span>
+                        </div>
+                    </div>
+                    <div class="contenedorAgregarAlCarrito d-flex justify-content-end align-items-center col-3">
+                        <i class="agregarAlCarrito fa-solid fa-plus"></i>
+                    </div>
+                </div>
+
+
+                
+            </div>
+        </section>
+
+        <!-- FIN HAMBURGUESAS -->
+
+    </main>
+    <footer>
+
+    </footer>
+</body>
+</html>

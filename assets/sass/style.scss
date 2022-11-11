@@ -97,6 +97,18 @@ h2 {
     }
 }
 
+// TITULOS // 
+
+.tituloDark {
+    font-weight: bold;
+    color: var(--color-secondary);
+}
+
+.subtituloDark {
+    font-weight: bold;
+    color: var(--color-secondary);
+}
+
 
 
 // NAVBAR PRIMARIO //
@@ -111,6 +123,9 @@ h2 {
     box-shadow: 1px 8px 10px 0px rgba(0,0,0,0.15);
     -webkit-box-shadow: 1px 8px 10px 0px rgba(0,0,0,0.15);
     -moz-box-shadow: 1px 8px 10px 0px rgba(0,0,0,0.15);
+    position: fixed;
+    z-index: 2;
+    background-color: white;
 }
 
     // LOGO //
@@ -162,7 +177,7 @@ input {
 // NAVBAR SECUNDARIO //
 
 .navbarSecundario {
-    padding: 20px 5%;
+    padding: 130px 5% 50px 5%;
 }
 
 
@@ -299,6 +314,100 @@ input {
     
     .contenedorCalificacion {
         text-align: center;
+    }
+
+
+
+// RESTAURANTE ELEGIDO // 
+
+    // HEADER // 
+
+    .contenedorHeader {
+        background-image: url("/assets/img/Rectangle 108.png");
+        background-size: cover;
+        background-position-x: center;
+        background-repeat: no-repeat;
+        background-color: black;
+        height: 600px;
+        width: 100%;
+        display: flex;
+    }
+
+    .contenedorTextoHeader {
+        padding-left: 5%;
+        padding-bottom: 2%;
+    }
+
+    .nombreLocalHeader {
+        color: white;
+        font-size: 4em;
+        font-weight: bold;
+    }
+
+    .subtituloLocal {
+        color: white; 
+        font-size: 2em;
+        font-weight: bold;
+    }
+
+    // SELECCIÓN CATEGORÍA // 
+
+    .seleccionCategoria {
+        margin: 40px 5%;
+    }
+
+    .botonCategorias {
+        margin-left: 20px;
+    }
+
+    // SECCIÓN PRODUCTOS //
+
+    .seccionProductos {
+        margin-left: 5%;
+    }
+
+    // TARJETA DE PRODUCTO //
+    
+    .cardProducto {
+        margin: 15px 0px;
+        background-color: var(--color-quinary);
+        border-radius: 60px;
+    }
+
+    .tituloProducto {
+        color: var(--color-secondary);
+        font-weight: bold;
+        font-size: 1.4em;
+    }
+
+    .precioAntiguo {
+        font-size: 1em;
+        color: var(--color-tertiary);
+        text-decoration: line-through;
+        margin: 0px;
+        margin-right: 10px;
+        padding: 0px;
+    }
+
+    .precioNuevo {
+        color: var(--color-secondary);
+        font-weight: bold;
+        margin: 0px;
+        margin-right: 10px;
+        padding: 0px;
+    }
+
+    .agregarAlCarrito {
+        font-size: 3em;
+        color: white;
+        background-color: var(--color-primary);
+        padding: 15px 20px;
+        border-radius: 200px;
+        &:hover {
+            color: var(--color-primary);
+            background-color: transparent;
+            border: 2px solid var(--color-primary);
+        }
     }
 
 
