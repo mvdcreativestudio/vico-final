@@ -8,7 +8,7 @@
 }
 
 p {
-    margin-bottom: 0px!important;
+    margin: 0px!important;
 }
 
 h2 {
@@ -16,17 +16,17 @@ h2 {
 }
 
 .fa-solid {
-    color: var(--color-secondary);
+    color: var(--color-secundario);
 }
 
 .iconoTitulo {
-    color: var(--color-secondary);
+    color: var(--color-secundario);
     font-size: 1.8em;
     margin-right: 10px;
 }
 
 .iconoSecundario {
-    color: var(--color-primary);
+    color: var(--color-primario);
     font-size: 1.5em;
     margin-right: 10px;
 }
@@ -51,11 +51,12 @@ h2 {
 // COLORES //
   :root {
     --color-default: #0a0d13;
-    --color-primary: #04A0EE;
-    --color-secondary: #2C5282;
-    --color-tertiary: #96D7F8;
-    --color-quaternary: #4299E1;
-    --color-quinary: #EBF8FF;
+    --color-primario: #04A0EE;
+    --color-secundario: #2C5282;
+    --color-terciario: #96D7F8;
+    --color-cuaternario: #4299E1;
+    --color-quinario: #EBF8FF;
+    --color-sextenario: #ECEAEA;
   }
 
   // CONTENEDORES // 
@@ -67,8 +68,8 @@ h2 {
 // BOTONES //
 
 .botonPrimario {
-    background-color: var(--color-primary);
-    border: solid 2px var(--color-primary);
+    background-color: var(--color-primario);
+    border: solid 2px var(--color-primario);
     border-radius: 20px;
     padding: 10px 30px;
     max-height: 50px;
@@ -78,21 +79,21 @@ h2 {
     font-size: .9em;
     &:hover {
         background-color: white;
-        color: var(--color-primary);
+        color: var(--color-primario);
     }
 }
 
 .botonSecundario {
     background-color: white;
-    border: solid 2px var(--color-primary);
+    border: solid 2px var(--color-primario);
     border-radius: 20px;
     padding: 10px 30px;
     max-height: 50px;
     font-weight: bold;
     font-size: .9em;
-    color: var(--color-primary);
+    color: var(--color-primario);
     &:hover {
-        background-color: var(--color-primary);
+        background-color: var(--color-primario);
         color: white;
     }
 }
@@ -101,12 +102,28 @@ h2 {
 
 .tituloDark {
     font-weight: bold;
-    color: var(--color-secondary);
+    color: var(--color-secundario);
 }
 
 .subtituloDark {
     font-weight: bold;
-    color: var(--color-secondary);
+    color: var(--color-secundario);
+}
+
+// BADGES // 
+
+.badgeNuevo {
+    margin: 3em 0px 0px 5em;
+}
+
+.badgeHeader {
+    margin: 3em 0px 0px 5em;
+    padding: 10px 20px;
+}
+
+.badgePorcentaje {
+    margin: 3em 0px 0px 5em;
+    padding: 5px 20px;
 }
 
 
@@ -146,12 +163,12 @@ h2 {
 
 .buscador {
     width: 100%;
-    border: solid 1px var(--color-primary);
+    border: solid 1px var(--color-primario);
     border-radius: 30px;
     padding: 7px;
     margin-left: 20px;
     &:hover {
-        border: solid 2px var(--color-primary)!important;
+        border: solid 2px var(--color-primario)!important;
     }
 }
 
@@ -186,7 +203,7 @@ input {
 .tituloHome {
     font-weight: bold;
     font-size: 1.4rem;
-    color: var(--color-secondary)
+    color: var(--color-secundario)
 }
 
     // TARJETAS //
@@ -205,36 +222,32 @@ input {
 }
 
 .tituloCard {
-    color: var(--color-secondary);
+    color: var(--color-secundario);
     font-weight: bold;
 }
 
 .textoCard {
     font-size: 14px;
-    color: var(--color-secondary)
+    color: var(--color-secundario)
 }
 
 .demoraTarjeta {
     font-weight: bold;
-    color: var(--color-quaternary);
+    color: var(--color-cuaternario);
 }
 
 .card-body {
-    background-color: var(--color-quinary);
+    background-color: var(--color-quinario);
     opacity: 70%;
 }
 
 .card-footer {
-    background-color: var(--color-quinary);
+    background-color: var(--color-quinario);
     opacity: 70%;
     border-radius: 0px 0px 50px 50px !important;
     padding: 10px 20px;
 }
 
-
-.badgeNuevo {
-    margin: 3em 0px 0px 5em;
-}
 
 .badgeMasPedido {
     margin: 3em 0px 0px 6em;
@@ -264,15 +277,15 @@ input {
     }
     
     label:hover {
-        color: var(--color-secondary);
+        color: var(--color-secundario);
     }
     
     label:hover ~ label {
-        color: var(--color-secondary);
+        color: var(--color-secundario);
     }
     
     input[type = "radio"]:checked ~ label {
-        color: var(--color-secondary);
+        color: var(--color-secundario);
     }
     
     #form {
@@ -305,11 +318,11 @@ input {
     
     label:hover,
     label:hover ~ label {
-        color: var(--color-secondary);
+        color: var(--color-secundario);
     }
     
     input[type="radio"]:checked ~ label {
-        color: var(--color-secondary);
+        color: var(--color-secundario);
     }
     
     .contenedorCalificacion {
@@ -350,6 +363,27 @@ input {
         font-weight: bold;
     }
 
+    // SUB-HEADER IF CLOSED // 
+
+    .subHeaderCerrado {
+        padding: 0px 5%;
+    }
+
+    .contenedorSubHeaderCerrado {
+        background-color: var(--color-sextenario);
+        height: 80px;
+        border-radius: 0px 0px 25px 25px;
+    }
+
+    .textoRestauranteCerrado {
+        font-weight: bold;
+        font-size: 1em;
+    }
+
+    .horaRestauranteCerrado {
+        font-weight: bold;
+    }
+
     // SELECCIÓN CATEGORÍA // 
 
     .seleccionCategoria {
@@ -370,20 +404,20 @@ input {
     
     .cardProducto {
         margin: 15px 0px;
-        background-color: var(--color-quinary);
+        background-color: var(--color-quinario);
         border-radius: 60px;
         max-height: 200px;
     }
 
     .tituloProducto {
-        color: var(--color-secondary);
+        color: var(--color-secundario);
         font-weight: bold;
         font-size: 1.4em;
     }
 
     .precioAntiguo {
         font-size: 1em;
-        color: var(--color-tertiary);
+        color: var(--color-terciario);
         text-decoration: line-through;
         margin: 0px;
         margin-right: 10px;
@@ -391,7 +425,7 @@ input {
     }
 
     .precioNuevo {
-        color: var(--color-secondary);
+        color: var(--color-secundario);
         font-weight: bold;
         margin: 0px;
         margin-right: 10px;
@@ -401,13 +435,13 @@ input {
     .agregarAlCarrito {
         font-size: 3em;
         color: white;
-        background-color: var(--color-primary);
+        background-color: var(--color-primario);
         padding: 15px 20px;
         border-radius: 200px;
         &:hover {
-            color: var(--color-primary);
+            color: var(--color-primario);
             background-color: transparent;
-            border: 2px solid var(--color-primary);
+            border: 2px solid var(--color-primario);
         }
     }
 
@@ -418,7 +452,7 @@ input {
         font-size: 1.3em;
         margin-top: 10px;
         font-weight: bold;
-        color: var(--color-primary);
+        color: var(--color-primario);
         padding: 10px 0px;
         text-align: left;
     }
@@ -427,7 +461,7 @@ input {
         font-size: 1.3em;
         margin-top: 10px;
         font-weight: bold;
-        color: var(--color-primary);
+        color: var(--color-primario);
         opacity: 60%;
         padding: 10px 0px;
         text-align: left;
@@ -442,17 +476,21 @@ input {
         padding: 0px;
     }
 
+    .horariosTarjeta {
+        border-bottom: solid 1px rgb(229, 229, 229);
+    }
+
     .diasTarjeta {
         margin: 0px;
         padding: 0px;
-        color: var(--color-secondary);
+        color: var(--color-secundario);
         font-size: .7em;
     }
 
     .horasTarjeta {
         margin: 0px;
         padding: 0px;
-        color: var(--color-secondary)
+        color: var(--color-secundario)
     }
 
 
@@ -465,7 +503,7 @@ input {
     // OPINIÓN DE USUARIOS // 
 
     .tituloOpinionDeUsuarios {
-        color: var(--color-primary);
+        color: var(--color-primario);
         opacity: 60%;
         font-size: .9em;
         font-weight: bold;
@@ -475,7 +513,9 @@ input {
 
     .calificacionOpinionDeUsuarios {
         font-weight: bold;
-        color: var(--color-secondary);
+        color: var(--color-secundario);
+        padding: 0px;
+        margin: 0px;
     }
 
     .estrellaTarjeta {
