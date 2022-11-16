@@ -115,7 +115,7 @@
                                 <span class="badgePorcentaje badge rounded-pill text-bg-primary m-0"> 20% </span>
                             </div>
                         </div>
-                        <div class="contenedorAgregarAlCarrito d-flex justify-content-end align-items-center col-3">
+                        <div data-bs-toggle="modal" data-bs-target="#modalProducto" class="contenedorAgregarAlCarrito d-flex justify-content-end align-items-center col-3">
                             <i class="agregarAlCarrito fa-solid fa-plus"></i>
                         </div>
                     </div>
@@ -136,7 +136,7 @@
                                 <span class="badgePorcentaje badge rounded-pill text-bg-primary m-0"> 20% </span>
                             </div>
                         </div>
-                        <div class="contenedorAgregarAlCarrito d-flex justify-content-end align-items-center col-3">
+                        <div data-bs-toggle="modal" data-bs-target="#modalProducto" class="contenedorAgregarAlCarrito d-flex justify-content-end align-items-center col-3">
                             <i class="agregarAlCarrito fa-solid fa-plus"></i>
                         </div>
                     </div>
@@ -157,7 +157,7 @@
                                 <span class="badgePorcentaje badge rounded-pill text-bg-primary m-0"> 20% </span>
                             </div>
                         </div>
-                        <div class="contenedorAgregarAlCarrito d-flex justify-content-end align-items-center col-3">
+                        <div data-bs-toggle="modal" data-bs-target="#modalProducto" class="contenedorAgregarAlCarrito d-flex justify-content-end align-items-center col-3">
                             <i class="agregarAlCarrito fa-solid fa-plus"></i>
                         </div>
                     </div>
@@ -178,7 +178,7 @@
                                 <span class="badgePorcentaje badge rounded-pill text-bg-primary m-0"> 20% </span>
                             </div>
                         </div>
-                        <div class="contenedorAgregarAlCarrito d-flex justify-content-end align-items-center col-3">
+                        <div data-bs-toggle="modal" data-bs-target="#modalProducto" class="contenedorAgregarAlCarrito d-flex justify-content-end align-items-center col-3">
                             <i class="agregarAlCarrito fa-solid fa-plus"></i>
                         </div>
                     </div>
@@ -259,6 +259,119 @@
                 
             </div>
         </section>
+
+        <!-- Modal Abierto - Producto -->
+
+        <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true" id="modalProducto">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    
+                    <div class="contenedorImagenModalProducto">
+                        <img class="imagenModalProducto img-fluid w-100" src="../assets/img/Rectangle 101.jpg" alt="">
+                    </div>
+                    <div class="modalBody">
+                        <h1 class="tituloDark pt-3">Picada para 4</h1>
+                        <p class="parrafoDarl">Hola esto es una picada re picante para 4 personas que decís. Parece que es riquisima!</p>
+                        <h6 class="subtituloDark pt-4">Le podés agregar</h6>
+
+                        <div>
+
+                            <div class="d-flex col-12 justify-content-between contenedorProductoComplementario align-items-end pb-2">
+                                <p class="col-2 p-0 m-0">Cebolla</p>
+                                <div class="col-7 lineaEspaciado"></div>
+                                <div class="d-flex col-2 align-items-center justify-content-around contenedorCantidad container-fluid">
+                                    <a id="restarCantidad" href=""><i class="fa-solid fa-minus modificarCantidadMini"></i></a>
+                                    <p class="cantidadProductoMini">1</p>
+                                    <a id="sumarCantidad" href=""><i class="fa-solid fa-plus modificarCantidadMini"></i></a>
+                                </div>
+                            </div>
+
+                            <div class="d-flex col-12 justify-content-between contenedorProductoComplementario align-items-end pb-2">
+                                <p class="col-2 p-0 m-0">Cebolla</p>
+                                <div class="col-7 lineaEspaciado"></div>
+                                <div class="d-flex col-2 align-items-center justify-content-around contenedorCantidad container-fluid">
+                                    <a id="restarCantidad" href=""><i class="fa-solid fa-minus modificarCantidadMini"></i></a>
+                                    <p class="cantidadProductoMini">1</p>
+                                    <a id="sumarCantidad" href=""><i class="fa-solid fa-plus modificarCantidadMini"></i></a>
+                                </div>
+                            </div>
+
+                            <div class="d-flex col-12 justify-content-between contenedorProductoComplementario align-items-end pb-2">
+                                <p class="col-2 p-0 m-0">Cebolla</p>
+                                <div class="col-7 lineaEspaciado"></div>
+                                <div class="d-flex col-2 align-items-center justify-content-around contenedorCantidad container-fluid">
+                                    <a id="restarCantidad" href=""><i class="fa-solid fa-minus modificarCantidadMini"></i></a>
+                                    <p class="cantidadProductoMini">1</p>
+                                    <a id="sumarCantidad" href=""><i class="fa-solid fa-plus modificarCantidadMini"></i></a>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="pt-2">
+                            <h6 class="subtituloDark">Combina muy bien con esto:</h6>
+
+                            <div class="d-flex col-12 justify-content-between pb-4">
+
+                                <div class="miniCard col-4 d-flex align-items-center pt-2 pb-1">
+                                    <div class="col-5">
+                                        <img src="../assets/img/burger.png" class="imagenMiniCard img-fluid" alt="">
+                                    </div>
+                                    <div class="col-5">
+                                        <h6 class="subtituloDark tituloMiniCard pb-2 m-0">Picada para 4</h6>
+                                        <h6 class="subtituloDark pt-1 m-0">$3900</h6>
+                                    </div>
+                                    <div class="col-2">
+                                        <i class="agregarAlCarritoMiniCard fa-solid fa-plus"></i>
+                                    </div>
+                                </div>
+
+                                <div class="miniCard miniCardCentral col-4 d-flex align-items-center pt-2 pb-1">
+                                    <div class="col-5">
+                                        <img src="../assets/img/burger.png" class="imagenMiniCard img-fluid" alt="">
+                                    </div>
+                                    <div class="col-5">
+                                        <h6 class="subtituloDark tituloMiniCard pb-2 m-0">Picada para 4</h6>
+                                        <h6 class="subtituloDark pt-1 m-0">$3900</h6>
+                                    </div>
+                                    <div class="col-2">
+                                        <i class="agregarAlCarritoMiniCard fa-solid fa-plus"></i>
+                                    </div>
+                                </div>
+
+                                <div class="miniCard col-4 d-flex align-items-center pt-2 pb-1">
+                                    <div class="col-5">
+                                        <img src="../assets/img/burger.png" class="imagenMiniCard img-fluid" alt="">
+                                    </div>
+                                    <div class="col-5">
+                                        <h6 class="subtituloDark tituloMiniCard pb-2 m-0">Picada para 4</h6>
+                                        <h6 class="subtituloDark pt-1 m-0">$3900</h6>
+                                    </div>
+                                    <div class="col-2">
+                                        <i class="agregarAlCarritoMiniCard fa-solid fa-plus"></i>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="modalFooter d-flex col-12 justify-content-center pb-3 pt-3 contenedorIrAlCarrito">
+                        <div class="d-flex align-items-center justify-content-center">
+                            <i class="fa-solid fa-minus modificarCantidad"></i>
+                            <p class="cantidadProducto">1</p>
+                            <i class="fa-solid fa-plus modificarCantidad"></i>
+                        </div>
+                        <div class="align-self-center">
+                            <button class="botonPedir">Pedir</button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- Fin Modal Producto Abierto -->
     </main>
 
     <!-- FOOTER  -->

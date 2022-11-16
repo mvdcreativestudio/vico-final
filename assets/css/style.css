@@ -90,6 +90,21 @@ h2 {
   color: white;
 }
 
+.botonPedir {
+  background-color: var(--color-primario);
+  border: solid 2px var(--color-primario);
+  border-radius: 20px;
+  padding: 0px 30px;
+  margin: 0px 15px;
+  color: white;
+  font-weight: bold;
+  font-size: 2em;
+}
+.botonPedir:hover {
+  background-color: white;
+  color: var(--color-primario);
+}
+
 .tituloDark {
   font-weight: bold;
   color: var(--color-secundario);
@@ -97,6 +112,10 @@ h2 {
 
 .subtituloDark {
   font-weight: bold;
+  color: var(--color-secundario);
+}
+
+.parrafoDark {
   color: var(--color-secundario);
 }
 
@@ -394,6 +413,86 @@ input[type=radio]:checked ~ label {
   color: var(--color-primario);
   background-color: transparent;
   border: 2px solid var(--color-primario);
+}
+
+.contenedorImagenModalProducto {
+  border-radius: 100px;
+}
+
+.imagenModalProducto {
+  border-radius: 50px 50px 0px 0px;
+}
+
+.modal-content {
+  border-radius: 50px !important;
+}
+
+.modalFooter {
+  border-radius: 0px 0px 50px 50px;
+}
+
+.modalBody {
+  padding: 0px 30px;
+  background-color: var(--color-quinario);
+}
+
+.modificarCantidadMini {
+  padding: 6px 10px;
+  margin: 0px 10px;
+  color: white;
+  background-color: var(--color-primario);
+  border-radius: 50px;
+}
+
+.modificarCantidad {
+  font-size: 2em;
+  padding: 6px 20px;
+  margin: 0px 10px;
+  color: white;
+  background-color: var(--color-primario);
+  border-radius: 50px;
+}
+
+.cantidadProducto {
+  font-size: 2em;
+  padding: 0px 15px;
+}
+
+.lineaEspaciado {
+  border-bottom: 1px dotted black;
+}
+
+.contenedorIrAlCarrito {
+  background-color: white;
+}
+
+.miniCard {
+  border: 2px solid white;
+  border-radius: 50px;
+}
+
+.miniCardCentral {
+  margin: 0px 10px;
+}
+
+.tituloMiniCard {
+  font-size: 0.8em;
+}
+
+.descripcionMiniCard {
+  font-size: 0.6em;
+}
+
+.agregarAlCarritoMiniCard {
+  font-size: 0.8em;
+  color: white;
+  background-color: var(--color-primario);
+  padding: 10px 10px;
+  border-radius: 200px;
+}
+.agregarAlCarritoMiniCard:hover {
+  color: var(--color-primario);
+  background-color: white;
 }
 
 .tituloDetallesRestaurante {
