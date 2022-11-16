@@ -73,7 +73,7 @@ h2 {
     border-radius: 20px;
     padding: 10px 30px;
     max-height: 50px;
-    margin: 0px 15px;
+    margin: 0px 15px 0px 0px;
     color: white;
     font-weight: bold;
     font-size: .9em;
@@ -125,6 +125,11 @@ h2 {
     color: var(--color-secundario);
 }
 
+.tituloSky {
+    font-weight: bold;
+    color: var(--color-primario);
+}
+
 // PARRAFOS //
 
 .parrafoDark {
@@ -164,6 +169,7 @@ h2 {
     position: fixed;
     z-index: 2;
     background-color: white;
+    margin-bottom: 120px;
 }
 
     // LOGO //
@@ -632,6 +638,104 @@ input {
 
     .estrellaTarjeta {
         font-size: 1.5em;
+    }
+
+
+// COMPRA 1 //
+
+.seccionSuperiorCompra {
+    padding-top: 130px;
+}
+
+.horarioRecomendado {
+    font-size: 1.6em;
+    margin-left: 15px;
+    color: gray;
+}
+
+.contenedorCuponAplicado {
+    border: solid 2px var(--color-primario);
+    border-radius: 30px;
+    opacity: .6;
+    padding: 7px 10px;
+}
+
+
+.cuponAplicado {
+    color: var(--color-primario);
+    opacity: .6;
+    font-size: .9em;
+    font-weight: bold;
+}
+
+.botonCerrar { 
+    font-size: .8em
+}
+
+    // CHANGUITO LATERAL // 
+
+    .contenedorChanguitoLateral {
+        padding: 20px;
+        border-radius: 30px;
+        box-shadow: 0px 5px 5px 2px rgba(0,0,0,0.13);
+        -webkit-box-shadow: 0px 5px 5px 2px rgba(0,0,0,0.13);
+        -moz-box-shadow: 0px 5px 5px 2px rgba(0,0,0,0.13);
+    }
+
+    .tituloTuPedido {
+        opacity: .6;
+    }
+
+    .notaDeProducto {
+        font-size: .8em;
+        margin-top: 0px;
+        padding-top: 0px;
+    }
+
+    .precioProductoChanguitoLateral {
+        font-weight: lighter;
+        color: var(--color-secundario)
+    }
+
+
+    // PRODUCTO RELACIONADO // 
+
+    // MINI CARD //
+
+    .productoRelacionado {
+        border: 2px solid white;
+        border-radius: 50px;
+        background-color: var(--color-quinario);
+    }
+
+    .ProductoRelacionadoCentral {
+        margin: 0px 10px;
+    }
+
+    // .imagenMiniCard {
+    //     max-width: 100px;
+    //     max-height: 100px;
+    // }
+
+    .tituloProductoRelacionado {
+        font-size: 1.1em;
+    }
+
+    .descripcionProductoRelacionado {
+        font-size: .6em;
+    }
+
+    .agregarAlCarritoProductoRelacionado {
+        font-size: .8em;
+        color: white;
+        background-color: var(--color-primario);
+        padding: 10px 10px;
+        border-radius: 200px;
+        &:hover {
+            color: var(--color-primario);
+            background-color: white;
+            
+        }
     }
 
 
