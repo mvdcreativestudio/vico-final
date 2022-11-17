@@ -37,6 +37,12 @@ h2 {
     margin-right: 10px;
 }
 
+.iconoDark {
+    color: var(--color-secundario);
+    font-size: 1.5em;
+    margin-right: 10px;
+}
+
 .white {
     color: white;
 }
@@ -115,6 +121,10 @@ h2 {
 
 .separarBoton {
     margin-left: 10px!important;
+}
+
+.sinMargen {
+    margin: 0px!important;
 }
 
 // TITULOS // 
@@ -741,6 +751,27 @@ input {
             background-color: white;
             
         }
+    }
+
+    // FINALIZAR COMPRA // 
+
+    .precioProductoFinalizarCompra {
+        font-weight: bold;
+        font-size: 1.2em;
+        color: var(--color-secundario);
+    }
+
+    .productoFinalizarCompra {
+        color: var(--color-secundario);
+        font-size: 1em;
+    }
+
+    .bordeFinalizarCompra {
+        border-bottom: solid 1px rgb(229, 229, 229);
+    }
+
+    .modalFinalizarCompra {
+        border-radius: 50px 50px 0px 0px;
     }
 
 
