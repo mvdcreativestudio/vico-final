@@ -105,6 +105,10 @@ h2 {
   color: var(--color-primario);
 }
 
+.separarBoton {
+  margin-left: 10px !important;
+}
+
 .tituloDark {
   font-weight: bold;
   color: var(--color-secundario);
