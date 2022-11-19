@@ -687,6 +687,68 @@ input[type=radio]:checked ~ label {
   border-radius: 50px 50px 0px 0px;
 }
 
+.contenedorHorario {
+  background-color: var(--color-quinario);
+  border-radius: 50px;
+}
+
+.tituloSeguimiento {
+  color: var(--color-primario);
+  font-weight: bold;
+}
+
+.iconoSeguimientoPasado {
+  font-size: 4em;
+  background-color: var(--color-primario);
+  padding: 1rem;
+  border-radius: 100px;
+  color: white;
+  width: 6rem;
+}
+
+.iconoSeguimientoActivo {
+  font-size: 4em;
+  background-color: var(--color-primario);
+  padding: 1rem;
+  border-radius: 100px;
+  color: white;
+  width: 6rem;
+}
+
+.iconoSeguimientoSiguiente {
+  font-size: 4em;
+  background-color: white;
+  border: solid 1px var(--color-primario);
+  padding: 1rem;
+  border-radius: 100px;
+  color: var(--color-primario);
+  width: 6rem;
+}
+
+.textoSeguimientoPasos {
+  color: var(--color-primario);
+}
+
+.pasoActivo {
+  font-weight: bold;
+}
+
+.iconoContactar {
+  font-size: 4em;
+}
+
+.necesitoAyuda {
+  font-size: 1.5em;
+  color: var(--color-primario);
+  font-weight: bold;
+}
+
+.contenedorNecesitoAyuda {
+  background-color: var(--color-quinario);
+  padding: 1.5rem;
+  border-radius: 50px;
+}
+
 .footer {
   background-color: #ECEAEA;
 }

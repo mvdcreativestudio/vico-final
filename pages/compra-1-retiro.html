@@ -121,7 +121,7 @@
                             <h4 class="tituloSky tituloTuPedido">$1200</h4>
                         </div>
                         <div class="justify-content-center d-flex mt-4">
-                            <button class="botonPrimario">Confirmar orden</button>
+                            <button data-bs-toggle="modal" data-bs-target="#modalFinalizarCompra" class="botonPrimario">Confirmar orden</button>
                         </div>
                     </div>
                 </div>
@@ -129,6 +129,130 @@
         </section>
 
         <!-- FIN SECCIÓN SUPERIOR -->
+
+        <!-- Modal Abierto - Finalizar Compra -->
+
+        <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true" id="modalFinalizarCompra">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    
+                    <div class="modalBody modalFinalizarCompra">
+                        <h1 class="tituloDark pt-3">Confirmá el pedido</h1>
+                        <h6 class="subtituloDark pt-1">Método de entrega: <span>Delivery</span></h6>
+                        <div>
+                            <h6 class="subtituloDark">Dirección</h6>
+                            <div class="d-flex pb-3 pt-2 text-center">
+                                <i class="fa-solid fa-location-dot align-self-center iconoDark"></i>
+                                <p>Avenida Moreno 111, Tres Arroyos</p>
+                            </div>
+                        </div>
+                        <div>
+                            <h6 class="subtituloDark">Número de dpto / casa</h6>
+                            <div class="d-flex pb-3 pt-0 text-center">
+                                <p>1C</p>
+                            </div>
+                        </div>
+                        <div>
+                            <h6 class="subtituloDark">Otras referencias</h6>
+                            <div class="d-flex pb-3 pt-0 text-center">
+                                <p>No funciona el timbre</p>
+                            </div>
+                        </div>
+
+                        <div>
+                            <div class="d-flex row ">
+                                <h6 class="subtituloDark">Tu Orden</h6>
+                                <!-- HORARIOS EN TARJETA -->
+    
+                                <div class=" align-items-center">
+                                    <div class="bordeFinalizarCompra d-flex justify-content-between align-items-center">
+                                        <p class="productoFinalizarCompra col-6 ">Hamburguesa completa</p>
+                                        <p class="precioProductoFinalizarCompra text-end col-2">$1200</p>
+                                    </div>
+                                    <div class="bordeFinalizarCompra d-flex justify-content-between align-items-center">
+                                        <p class="productoFinalizarCompra col-6">Cebolla</p>
+                                        <p class="precioProductoFinalizarCompra text-end col-2">$200</p>
+                                    </div>
+                                    <div class="bordeFinalizarCompra d-flex justify-content-between align-items-center">
+                                        <p class="productoFinalizarCompra col-6">Primera Compra</p>
+                                        <p class="precioProductoFinalizarCompra text-end col-2">-$400</p>
+                                    </div>
+                                    <div class="bordeFinalizarCompra d-flex justify-content-between align-items-center">
+                                        <p class="productoFinalizarCompra col-6">Delivery</p>
+                                        <p class="precioProductoFinalizarCompra text-end col-2">$200</p>
+                                    </div>
+                                    <div class="bordeFinalizarCompra pt-4 d-flex justify-content-between align-items-center">
+                                        <p class="productoFinalizarCompra tituloDark col-6">Total</p>
+                                        <p class="precioProductoFinalizarCompra text-end col-2">$1200</p>
+                                    </div>
+                                </div>
+    
+                            </div>
+                        </div>
+
+
+                        
+                        <div class="pt-5">
+                            <h6 class="subtituloDark">Agregale antes de irte...</h6>
+
+                            <div class="d-flex col-12 justify-content-between pb-4">
+
+                                <div class="miniCard col-4 d-flex align-items-center pt-2 pb-1">
+                                    <div class="col-5">
+                                        <img src="../assets/img/burger.png" class="imagenMiniCard img-fluid" alt="">
+                                    </div>
+                                    <div class="col-5">
+                                        <h6 class="subtituloDark tituloMiniCard pb-2 m-0">Picada para 4</h6>
+                                        <h6 class="subtituloDark pt-1 m-0">$3900</h6>
+                                    </div>
+                                    <div class="col-2">
+                                        <i class="agregarAlCarritoMiniCard fa-solid fa-plus"></i>
+                                    </div>
+                                </div>
+
+                                <div class="miniCard miniCardCentral col-4 d-flex align-items-center pt-2 pb-1">
+                                    <div class="col-5">
+                                        <img src="../assets/img/burger.png" class="imagenMiniCard img-fluid" alt="">
+                                    </div>
+                                    <div class="col-5">
+                                        <h6 class="subtituloDark tituloMiniCard pb-2 m-0">Picada para 4</h6>
+                                        <h6 class="subtituloDark pt-1 m-0">$3900</h6>
+                                    </div>
+                                    <div class="col-2">
+                                        <i class="agregarAlCarritoMiniCard fa-solid fa-plus"></i>
+                                    </div>
+                                </div>
+
+                                <div class="miniCard col-4 d-flex align-items-center pt-2 pb-1">
+                                    <div class="col-5">
+                                        <img src="../assets/img/burger.png" class="imagenMiniCard img-fluid" alt="">
+                                    </div>
+                                    <div class="col-5">
+                                        <h6 class="subtituloDark tituloMiniCard pb-2 m-0">Picada para 4</h6>
+                                        <h6 class="subtituloDark pt-1 m-0">$3900</h6>
+                                    </div>
+                                    <div class="col-2">
+                                        <i class="agregarAlCarritoMiniCard fa-solid fa-plus"></i>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="modalFooter d-flex col-12 justify-content-center pb-3 pt-3 contenedorIrAlCarrito">
+                        <div class="align-self-center">
+                            <button class="botonPrimario">Efectivo</button>
+                            <button class="botonPrimario">Tarjeta Débito / Crédito</button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- Fin Modal Finalizar Compra -->
 
         <!-- FIN SECCIÓN INFERIOR -->
         <section class="contenedor">
@@ -185,8 +309,53 @@
     </main>
 
 
-    <footer>
+    <!-- FOOTER  -->
 
+    <footer>
+        <section class="footer mt-5">
+            <div class="d-flex justify-content-center pt-5 pb-5">
+                <div class="col-2 text-center">
+                    <img class="img-fluid logoFooter" src="../assets/img/logo_nav.png" alt="">
+                    <p>La app de delivery</p>
+                    <p>del Interior</p>
+                </div>
+            </div>
+            <div class="col-12 d-flex text-center justify-content-center">
+                <div class="col-2">
+                    <p class="subtituloFooter">CONOCÉ MÁS SOBRE VICI</p>
+                    <p class="textoFooter">Sobre Nosotros</p>
+                    <p class="textoFooter">Inversores</p>
+                    <p class="textoFooter">Cómo comprar en VICI</p>
+                    <p class="textoFooter">Quiero ser parte de VICI</p>
+                </div>
+
+                <div class="col-2">
+                    <p class="subtituloFooter">PRIVACIDAD</p>
+                    <p class="textoFooter">Política de privacidad</p>
+                    <p class="textoFooter">Términos y condiciones</p>
+                    <p class="textoFooter">Política de cookies</p>
+                </div>
+
+                <div class="col-2">
+                    <p class="subtituloFooter">COMUNIDAD VICI</p>
+                    <p class="textoFooter">Atención al cliente</p>
+                    <p class="textoFooter">Newsletter</p>
+                    <p class="textoFooter">Blog</p>
+                </div>
+
+                <div class="col-2">
+                    <p class="subtituloFooter">NUESTRAS REDES</p>
+                    <p class="textoFooter"><i class="fa-brands fa-instagram"></i> Instagram</p>
+                    <p class="textoFooter"><i class="fa-brands fa-facebook-f"></i> Facebook</p>
+                    <p class="textoFooter"><i class="fa-brands fa-twitter"></i> Twitter</p>
+                    <p class="textoFooter"><i class="fa-brands fa-linkedin-in"></i> LinkedIn</p>
+                </div>
+            </div>
+            <div class="d-flex justify-content-center pt-5 pb-5">
+                <img class="img-fluid descargaFooter" src="../assets/img/google-play.png" alt="">
+                <img class="img-fluid descargaFooter" src="../assets/img/appstore.png" alt="">
+            </div>
+        </section>
     </footer>
 </body>
 </html>
