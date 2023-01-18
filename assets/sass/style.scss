@@ -78,7 +78,6 @@ h2 {
     border: solid 2px var(--color-primario);
     border-radius: 20px;
     padding: 10px 30px;
-    max-height: 50px;
     margin: 0px 15px 0px 0px;
     color: white;
     font-weight: bold;
@@ -94,7 +93,6 @@ h2 {
     border: solid 2px var(--color-primario);
     border-radius: 20px;
     padding: 10px 30px;
-    max-height: 50px;
     font-weight: bold;
     font-size: .9em;
     color: var(--color-primario);
@@ -260,6 +258,8 @@ input {
 
 .card-img-top {
     border-radius: 50px 50px 0px 0px;
+    object-fit: cover;
+    height: 200px;
 }
 
 .tituloCard {
@@ -275,6 +275,7 @@ input {
 .demoraTarjeta {
     font-weight: bold;
     color: var(--color-cuaternario);
+    font-size: 1rem;
 }
 
 .card-body {
@@ -288,6 +289,7 @@ input {
     border-radius: 0px 0px 50px 50px !important;
     padding: 10px 20px;
 }
+
 
 
 .badgeMasPedido {
@@ -429,6 +431,12 @@ input {
 
     .seleccionCategoria {
         margin: 40px 5%;
+        max-width: 100%;
+        flex-wrap: wrap;
+    }
+    
+    .contenedorCategorias {
+        flex-wrap: wrap;
     }
 
     .botonCategorias {
@@ -484,6 +492,12 @@ input {
             background-color: transparent;
             border: 2px solid var(--color-primario);
         }
+    }
+
+    .img-producto {
+        width: 90%;
+        height: 100%;
+        object-fit: cover;
     }
 
     // MODAL PRODUCTOS //
