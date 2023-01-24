@@ -48,7 +48,7 @@
 
         <!-- NAVBAR SECUNDARIO -->
 
-        <div class="navbarSecundario justify-content-between d-flex col-md-12">
+        <!-- <div class="navbarSecundario justify-content-between d-flex col-12">
             <div class="contenedorDesplegableUbicacion col-4">
                 <div class="desplegableUbicacion">
                     <div class="dropdown">
@@ -64,14 +64,31 @@
                 </div>
             </div>
             
-            <div class="contenedorCategorias d-flex justify-content-center col-md-4">
+            <div class="contenedorCategorias d-flex justify-content-center col-md-4 col-8">
                 <button class="botonPrimario"><i class="iconoTerciario fa-solid fa-pizza-slice"></i> Restaurantes</button>
                 <button class="botonSecundario"><i class="iconoSecundario fa-solid fa-basket-shopping"></i> Mercados</button>
             </div>
 
-            <div class="col-md-4">
+
+        </div>     -->
+
+        <div class="secondaryNavbar col-12 d-flex justify-content-between flex-wrap">
+            <div class="dropdown col-md-3 col-xl-2 col-12">
+                <button class="botonSecundario btn-lg dropdown-toggle dropdownBuscador col-12" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <i class="iconoSecundario fa-solid fa-location-dot"></i> Tres Arroyos
+                </button>
+                <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Venado Tuerto</a></li>
+                <li><a class="dropdown-item" href="#">La Plata</a></li>
+                <li><a class="dropdown-item" href="#">Provincia Rebelde</a></li>
+                </ul>
             </div>
-        </div>    
+            <div class="contenedorCategorias d-flex justify-content-end flex-wrap col-md-6 col-12">
+                <button class="btn btn-sm botonPrimario separarBoton col-lg-3 col-md-5 col-12"><i class="iconoTerciario fa-solid fa-pizza-slice"></i> Restaurantes</button>
+                <button class="btn btn-sm botonSecundario col-lg-3 col-md-5 col-12"><i class="iconoSecundario fa-solid fa-basket-shopping"></i> Mercados</button>
+            </div>
+
+        </div>
 
         <!-- FIN NAVBAR SECUNDARIO -->
     </nav>
@@ -83,11 +100,14 @@
                 <div class="contenedorTituloHome d-flex align-items-center">
                     <i class="iconoTitulo fa-solid fa-lightbulb"></i> <h2 class="tituloHome">Las mejores promos de tu ciudad</h2>
                 </div>
-
-                <div class="contenedorTarjetasPromosEnTuCiudad d-flex justify-content-around pt-5">
-                    <img class="img-fluid" src="./assets/img/Rectangle 99.png" alt="">
-                    <img class="img-fluid" src="./assets/img/Rectangle 100.png" alt="">
+                
+                <div class="row">
+                    <div class="col-lg-12 pt-5 justify-content-between">
+                        <img class="img-fluid" src="./assets/img/Rectangle 99.png"  />
+                        <img class="img-fluid" src="./assets/img/Rectangle 100.png" />
+                    </div>
                 </div>
+
             </div>
         </section>
         <!-- FIN LAS MEJORES PROMOS EN TU CIUDAD -->
@@ -99,363 +119,168 @@
                     <i class="iconoTitulo fa-solid fa-pizza-slice"></i> <h2 class="tituloHome">Restaurantes de tu ciudad</h2>
                 </div>
 
-                <div class="contenedorTarjetasRestaurantesEnTuCiudad d-flex justify-content-between flex-wrap pt-5">
-
-
-                    <div class="card" style="width: 30%;">
-                        <img src="./assets/img/Rectangle 108.png" class="card-img-top" alt="...">
-                        <span class="position-absolute top-10 start-0 badgeNuevo translate-middle badge rounded-pill text-bg-primary">
-                            <i class="fa-solid white fa-bolt"></i> Nuevo
-                        </span>
-                        <div class="d-flex col-12">
-                            <div class="card-body col-9">
-                                <h5 class="tituloCard">Mc Donald's</h5>
-                                <p class="textoCard">Hola, esto es una re picada</p>
+                <div class="row">
+                    
+                    <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3">
+                        <div class="card">
+                            <img src="./assets/img/Rectangle 108.png" class="card-img-top" alt="...">
+                            <span class="position-absolute top-10 start-0 badgeNuevo translate-middle badge rounded-pill text-bg-primary">
+                                <i class="fa-solid white fa-bolt"></i> Nuevo
+                            </span>
+                            <div class="d-flex col-12">
+                                <div class="card-body col-8">
+                                    <h5 class="tituloCard">Mc Donald's</h5>
+                                    <p class="textoCard">Hola, esto es una re picada</p>
+                                </div>
+                                <div class="card-body col-4 text-center">
+                                    <p class="demoraTarjeta">25 - 40 Min</p>
+                                </div>
                             </div>
-                            <div class="card-body col-3 text-center">
-                                <p class="demoraTarjeta">25 - 40 Min</p>
+                            <div class="d-flex justify-content-between card-footer">
+                                <div class="contenedorCalificacion d-flex col-8">
+                                    <form>
+                                        <p class="clasificacion">
+                                        <input id="radio1" type="radio" name="estrellas" value="5"><!--
+                                        --><label for="radio1">★</label><!--
+                                        --><input id="radio2" type="radio" name="estrellas" value="4"><!--
+                                        --><label for="radio2">★</label><!--
+                                        --><input id="radio3" type="radio" name="estrellas" value="3"><!--
+                                        --><label for="radio3">★</label><!--
+                                        --><input id="radio4" type="radio" name="estrellas" value="2"><!--
+                                        --><label for="radio4">★</label><!--
+                                        --><input id="radio5" type="radio" name="estrellas" value="1"><!--
+                                        --><label for="radio5">★</label>
+                                        </p>
+                                    </form>
+                                </div>
+                                <div class="d-flex col-4 justify-content-end">
+                                    <img class="img-fluid iconoLocationCard" src="./assets/img/location.png" alt="">
+                                    <p class="distanciaCard">0.1 Km.</p>
+                                </div>
+                                
                             </div>
-                        </div>
-                        <div class="d-flex justify-content-between card-footer">
-                            <div class="contenedorCalificacion d-flex col-8">
-                                <form>
-                                    <p class="clasificacion">
-                                      <input id="radio1" type="radio" name="estrellas" value="5"><!--
-                                      --><label for="radio1">★</label><!--
-                                      --><input id="radio2" type="radio" name="estrellas" value="4"><!--
-                                      --><label for="radio2">★</label><!--
-                                      --><input id="radio3" type="radio" name="estrellas" value="3"><!--
-                                      --><label for="radio3">★</label><!--
-                                      --><input id="radio4" type="radio" name="estrellas" value="2"><!--
-                                      --><label for="radio4">★</label><!--
-                                      --><input id="radio5" type="radio" name="estrellas" value="1"><!--
-                                      --><label for="radio5">★</label>
-                                    </p>
-                                </form>
-                            </div>
-                            <div class="d-flex col-4 justify-content-end">
-                                <img class="img-fluid iconoLocationCard" src="./assets/img/location.png" alt="">
-                                <p class="distanciaCard">0.1 Km.</p>
-                            </div>
-                            
                         </div>
                     </div>
-
-
-                    <div class="card" style="width: 30%;">
-                        <img src="./assets/img/Rectangle 101.jpg" class="card-img-top" alt="...">
-                        <span class="position-absolute top-10 start-0 badgeNuevo translate-middle badge rounded-pill text-bg-primary">
-                            <i class="fa-solid white fa-bolt"></i> Nuevo
-                        </span>
-                        <div class="d-flex col-12">
-                            <div class="card-body col-9">
-                                <h5 class="tituloCard">Mc Donald's</h5>
-                                <p class="textoCard">Hola, esto es una re picada</p>
+                    <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3">
+                        <div class="card">
+                            <img src="./assets/img/Rectangle 101.jpg" class="card-img-top" alt="...">
+                            <span class="position-absolute top-10 start-0 badgeNuevo translate-middle badge rounded-pill text-bg-primary">
+                                <i class="fa-solid white fa-bolt"></i> Nuevo
+                            </span>
+                            <div class="d-flex col-12">
+                                <div class="card-body col-8">
+                                    <h5 class="tituloCard">Mc Donald's</h5>
+                                    <p class="textoCard">Hola, esto es una re picada</p>
+                                </div>
+                                <div class="card-body col-4 text-center">
+                                    <p class="demoraTarjeta">25 - 40 Min</p>
+                                </div>
                             </div>
-                            <div class="card-body col-3 text-center">
-                                <p class="demoraTarjeta">25 - 40 Min</p>
-                            </div>
-                        </div>
-                        <div class="d-flex justify-content-between card-footer">
-                            <div class="contenedorCalificacion d-flex col-8">
-                                <form>
-                                    <p class="clasificacion">
-                                      <input id="radio1" type="radio" name="estrellas" value="5"><!--
-                                      --><label for="radio1">★</label><!--
-                                      --><input id="radio2" type="radio" name="estrellas" value="4"><!--
-                                      --><label for="radio2">★</label><!--
-                                      --><input id="radio3" type="radio" name="estrellas" value="3"><!--
-                                      --><label for="radio3">★</label><!--
-                                      --><input id="radio4" type="radio" name="estrellas" value="2"><!--
-                                      --><label for="radio4">★</label><!--
-                                      --><input id="radio5" type="radio" name="estrellas" value="1"><!--
-                                      --><label for="radio5">★</label>
-                                    </p>
-                                </form>
-                            </div>
-                            <div class="d-flex col-4 justify-content-end">
-                                <img class="img-fluid iconoLocationCard" src="./assets/img/location.png" alt="">
-                                <p class="distanciaCard">0.1 Km.</p>
-                            </div>
-                            
-                        </div>
-                    </div>
-
-
-
-                    <div class="card" style="width: 30%;">
-                        <img src="./assets/img/Rectangle 101.jpg" class="card-img-top" alt="...">
-                        <span class="position-absolute top-10 start-0 badgeNuevo translate-middle badge rounded-pill text-bg-primary">
-                            <i class="fa-solid white fa-bolt"></i> Nuevo
-                        </span>
-                        <div class="d-flex col-12">
-                            <div class="card-body col-9">
-                                <h5 class="tituloCard">Mc Donald's</h5>
-                                <p class="textoCard">Hola, esto es una re picada</p>
-                            </div>
-                            <div class="card-body col-3 text-center">
-                                <p class="demoraTarjeta">25 - 40 Min</p>
-                            </div>
-                        </div>
-                        <div class="d-flex justify-content-between card-footer">
-                            <div class="contenedorCalificacion d-flex col-8">
-                                <form>
-                                    <p class="clasificacion">
-                                      <input id="radio1" type="radio" name="estrellas" value="5"><!--
-                                      --><label for="radio1">★</label><!--
-                                      --><input id="radio2" type="radio" name="estrellas" value="4"><!--
-                                      --><label for="radio2">★</label><!--
-                                      --><input id="radio3" type="radio" name="estrellas" value="3"><!--
-                                      --><label for="radio3">★</label><!--
-                                      --><input id="radio4" type="radio" name="estrellas" value="2"><!--
-                                      --><label for="radio4">★</label><!--
-                                      --><input id="radio5" type="radio" name="estrellas" value="1"><!--
-                                      --><label for="radio5">★</label>
-                                    </p>
-                                </form>
-                            </div>
-                            <div class="d-flex col-4 justify-content-end">
-                                <img class="img-fluid iconoLocationCard" src="./assets/img/location.png" alt="">
-                                <p class="distanciaCard">0.1 Km.</p>
+                            <div class="d-flex justify-content-between card-footer">
+                                <div class="contenedorCalificacion d-flex col-8">
+                                    <form>
+                                        <p class="clasificacion">
+                                        <input id="radio1" type="radio" name="estrellas" value="5"><!--
+                                        --><label for="radio1">★</label><!--
+                                        --><input id="radio2" type="radio" name="estrellas" value="4"><!--
+                                        --><label for="radio2">★</label><!--
+                                        --><input id="radio3" type="radio" name="estrellas" value="3"><!--
+                                        --><label for="radio3">★</label><!--
+                                        --><input id="radio4" type="radio" name="estrellas" value="2"><!--
+                                        --><label for="radio4">★</label><!--
+                                        --><input id="radio5" type="radio" name="estrellas" value="1"><!--
+                                        --><label for="radio5">★</label>
+                                        </p>
+                                    </form>
+                                </div>
+                                <div class="d-flex col-4 justify-content-end">
+                                    <img class="img-fluid iconoLocationCard" src="./assets/img/location.png" alt="">
+                                    <p class="distanciaCard">0.1 Km.</p>
+                                </div>
+                                
                             </div>
                         </div>
                     </div>
 
-
-
-                    <div class="card" style="width: 30%;">
-                        <img src="./assets/img/Rectangle 101.jpg" class="card-img-top" alt="...">
-                        <span class="position-absolute top-0 start-0 badgeMasPedido translate-middle badge rounded-pill text-bg-primary">
-                            <i class="fa-solid white fa-bolt"></i> Más Pedido
-                        </span>
-                        <div class="d-flex col-12">
-                            <div class="card-body col-9">
-                                <h5 class="tituloCard">Mc Donald's</h5>
-                                <p class="textoCard">Hola, esto es una re picada</p>
+                    <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3">
+                        <div class="card">
+                            <img src="./assets/img/Rectangle 101.jpg" class="card-img-top" alt="...">
+                            <span class="position-absolute top-10 start-0 badgeNuevo translate-middle badge rounded-pill text-bg-primary">
+                                <i class="fa-solid white fa-bolt"></i> Nuevo
+                            </span>
+                            <div class="d-flex col-12">
+                                <div class="card-body col-8">
+                                    <h5 class="tituloCard">Mc Donald's</h5>
+                                    <p class="textoCard">Hola, esto es una re picada</p>
+                                </div>
+                                <div class="card-body col-4 text-center">
+                                    <p class="demoraTarjeta">25 - 40 Min</p>
+                                </div>
                             </div>
-                            <div class="card-body col-3 text-center">
-                                <p class="demoraTarjeta">25 - 40 Min</p>
-                            </div>
-                        </div>
-                        <div class="d-flex justify-content-between card-footer">
-                            <div class="contenedorCalificacion d-flex col-8">
-                                <form>
-                                    <p class="clasificacion">
-                                      <input id="radio1" type="radio" name="estrellas" value="5"><!--
-                                      --><label for="radio1">★</label><!--
-                                      --><input id="radio2" type="radio" name="estrellas" value="4"><!--
-                                      --><label for="radio2">★</label><!--
-                                      --><input id="radio3" type="radio" name="estrellas" value="3"><!--
-                                      --><label for="radio3">★</label><!--
-                                      --><input id="radio4" type="radio" name="estrellas" value="2"><!--
-                                      --><label for="radio4">★</label><!--
-                                      --><input id="radio5" type="radio" name="estrellas" value="1"><!--
-                                      --><label for="radio5">★</label>
-                                    </p>
-                                </form>
-                            </div>
-                            <div class="d-flex col-4 justify-content-end">
-                                <img class="img-fluid iconoLocationCard" src="./assets/img/location.png" alt="">
-                                <p class="distanciaCard">0.1 Km.</p>
-                            </div>
-                        </div>
-                    </div>
-
-
-                    <div class="card" style="width: 30%;">
-                        <img src="./assets/img/Rectangle 101.jpg" class="card-img-top" alt="...">
-                        <span class="position-absolute top-10 start-0 badgeMasPedido translate-middle badge rounded-pill text-bg-primary">
-                            <i class="fa-solid white fa-bolt"></i> Más Pedido
-                        </span>
-                        <div class="d-flex col-12">
-                            <div class="card-body col-9">
-                                <h5 class="tituloCard">Mc Donald's</h5>
-                                <p class="textoCard">Hola, esto es una re picada</p>
-                            </div>
-                            <div class="card-body col-3 text-center">
-                                <p class="demoraTarjeta">25 - 40 Min</p>
-                            </div>
-                        </div>
-                        <div class="d-flex justify-content-between card-footer">
-                            <div class="contenedorCalificacion d-flex col-8">
-                                <form>
-                                    <p class="clasificacion">
-                                      <input id="radio1" type="radio" name="estrellas" value="5"><!--
-                                      --><label for="radio1">★</label><!--
-                                      --><input id="radio2" type="radio" name="estrellas" value="4"><!--
-                                      --><label for="radio2">★</label><!--
-                                      --><input id="radio3" type="radio" name="estrellas" value="3"><!--
-                                      --><label for="radio3">★</label><!--
-                                      --><input id="radio4" type="radio" name="estrellas" value="2"><!--
-                                      --><label for="radio4">★</label><!--
-                                      --><input id="radio5" type="radio" name="estrellas" value="1"><!--
-                                      --><label for="radio5">★</label>
-                                    </p>
-                                </form>
-                            </div>
-                            <div class="d-flex col-4 justify-content-end">
-                                <img class="img-fluid iconoLocationCard" src="./assets/img/location.png" alt="">
-                                <p class="distanciaCard">0.1 Km.</p>
+                            <div class="d-flex justify-content-between card-footer">
+                                <div class="contenedorCalificacion d-flex col-8">
+                                    <form>
+                                        <p class="clasificacion">
+                                        <input id="radio1" type="radio" name="estrellas" value="5"><!--
+                                        --><label for="radio1">★</label><!--
+                                        --><input id="radio2" type="radio" name="estrellas" value="4"><!--
+                                        --><label for="radio2">★</label><!--
+                                        --><input id="radio3" type="radio" name="estrellas" value="3"><!--
+                                        --><label for="radio3">★</label><!--
+                                        --><input id="radio4" type="radio" name="estrellas" value="2"><!--
+                                        --><label for="radio4">★</label><!--
+                                        --><input id="radio5" type="radio" name="estrellas" value="1"><!--
+                                        --><label for="radio5">★</label>
+                                        </p>
+                                    </form>
+                                </div>
+                                <div class="d-flex col-4 justify-content-end">
+                                    <img class="img-fluid iconoLocationCard" src="./assets/img/location.png" alt="">
+                                    <p class="distanciaCard">0.1 Km.</p>
+                                </div>
                             </div>
                         </div>
                     </div>
 
-
-                    <div class="card" style="width: 30%;">
-                        <img src="./assets/img/Rectangle 101.jpg" class="card-img-top" alt="...">
-                        <span class="position-absolute top-10 start-0 badgeMasPedido translate-middle badge rounded-pill text-bg-primary">
-                            <i class="fa-solid white fa-bolt"></i> Más Pedido
-                        </span>
-                        <div class="d-flex col-12">
-                            <div class="card-body col-9">
-                                <h5 class="tituloCard">Mc Donald's</h5>
-                                <p class="textoCard">Hola, esto es una re picada</p>
+                    <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3">
+                        <div class="card">
+                            <img src="./assets/img/Rectangle 101.jpg" class="card-img-top" alt="...">
+                            <span class="position-absolute top-10 start-0 badgeNuevo translate-middle badge rounded-pill text-bg-primary">
+                                <i class="fa-solid white fa-bolt"></i> Nuevo
+                            </span>
+                            <div class="d-flex col-12">
+                                <div class="card-body col-8">
+                                    <h5 class="tituloCard">Mc Donald's</h5>
+                                    <p class="textoCard">Hola, esto es una re picada</p>
+                                </div>
+                                <div class="card-body col-4 text-center">
+                                    <p class="demoraTarjeta">25 - 40 Min</p>
+                                </div>
                             </div>
-                            <div class="card-body col-3 text-center">
-                                <p class="demoraTarjeta">25 - 40 Min</p>
-                            </div>
-                        </div>
-                        <div class="d-flex justify-content-between card-footer">
-                            <div class="contenedorCalificacion d-flex col-8">
-                                <form>
-                                    <p class="clasificacion">
-                                      <input id="radio1" type="radio" name="estrellas" value="5"><!--
-                                      --><label for="radio1">★</label><!--
-                                      --><input id="radio2" type="radio" name="estrellas" value="4"><!--
-                                      --><label for="radio2">★</label><!--
-                                      --><input id="radio3" type="radio" name="estrellas" value="3"><!--
-                                      --><label for="radio3">★</label><!--
-                                      --><input id="radio4" type="radio" name="estrellas" value="2"><!--
-                                      --><label for="radio4">★</label><!--
-                                      --><input id="radio5" type="radio" name="estrellas" value="1"><!--
-                                      --><label for="radio5">★</label>
-                                    </p>
-                                </form>
-                            </div>
-                            <div class="d-flex col-4 justify-content-end">
-                                <img class="img-fluid iconoLocationCard" src="./assets/img/location.png" alt="">
-                                <p class="distanciaCard">0.1 Km.</p>
-                            </div>
-                        </div>
-                    </div>
-
-
-                    <div class="card" style="width: 30%;">
-                        <img src="./assets/img/Rectangle 101.jpg" class="card-img-top" alt="...">
-                        <span class="position-absolute top-10 start-0 badgeNuevo translate-middle badge rounded-pill text-bg-primary">
-                            <i class="fa-solid white fa-bolt"></i> Nuevo
-                        </span>
-                        <div class="d-flex col-12">
-                            <div class="card-body col-9">
-                                <h5 class="tituloCard">Mc Donald's</h5>
-                                <p class="textoCard">Hola, esto es una re picada</p>
-                            </div>
-                            <div class="card-body col-3 text-center">
-                                <p class="demoraTarjeta">25 - 40 Min</p>
-                            </div>
-                        </div>
-                        <div class="d-flex justify-content-between card-footer">
-                            <div class="contenedorCalificacion d-flex col-8">
-                                <form>
-                                    <p class="clasificacion">
-                                      <input id="radio1" type="radio" name="estrellas" value="5"><!--
-                                      --><label for="radio1">★</label><!--
-                                      --><input id="radio2" type="radio" name="estrellas" value="4"><!--
-                                      --><label for="radio2">★</label><!--
-                                      --><input id="radio3" type="radio" name="estrellas" value="3"><!--
-                                      --><label for="radio3">★</label><!--
-                                      --><input id="radio4" type="radio" name="estrellas" value="2"><!--
-                                      --><label for="radio4">★</label><!--
-                                      --><input id="radio5" type="radio" name="estrellas" value="1"><!--
-                                      --><label for="radio5">★</label>
-                                    </p>
-                                </form>
-                            </div>
-                            <div class="d-flex col-4 justify-content-end">
-                                <img class="img-fluid iconoLocationCard" src="./assets/img/location.png" alt="">
-                                <p class="distanciaCard">0.1 Km.</p>
+                            <div class="d-flex justify-content-between card-footer">
+                                <div class="contenedorCalificacion d-flex col-8">
+                                    <form>
+                                        <p class="clasificacion">
+                                        <input id="radio1" type="radio" name="estrellas" value="5"><!--
+                                        --><label for="radio1">★</label><!--
+                                        --><input id="radio2" type="radio" name="estrellas" value="4"><!--
+                                        --><label for="radio2">★</label><!--
+                                        --><input id="radio3" type="radio" name="estrellas" value="3"><!--
+                                        --><label for="radio3">★</label><!--
+                                        --><input id="radio4" type="radio" name="estrellas" value="2"><!--
+                                        --><label for="radio4">★</label><!--
+                                        --><input id="radio5" type="radio" name="estrellas" value="1"><!--
+                                        --><label for="radio5">★</label>
+                                        </p>
+                                    </form>
+                                </div>
+                                <div class="d-flex col-4 justify-content-end">
+                                    <img class="img-fluid iconoLocationCard" src="./assets/img/location.png" alt="">
+                                    <p class="distanciaCard">0.1 Km.</p>
+                                </div>
                             </div>
                         </div>
                     </div>
-
-
-                    <div class="card" style="width: 30%;">
-                        <img src="./assets/img/Rectangle 101.jpg" class="card-img-top" alt="...">
-                        <span class="position-absolute top-10 start-0 badgeNuevo translate-middle badge rounded-pill text-bg-primary">
-                            <i class="fa-solid white fa-bolt"></i> Nuevo
-                        </span>
-                        <div class="d-flex col-12">
-                            <div class="card-body col-9">
-                                <h5 class="tituloCard">Mc Donald's</h5>
-                                <p class="textoCard">Hola, esto es una re picada</p>
-                            </div>
-                            <div class="card-body col-3 text-center">
-                                <p class="demoraTarjeta">25 - 40 Min</p>
-                            </div>
-                        </div>
-                        <div class="d-flex justify-content-between card-footer">
-                            <div class="contenedorCalificacion d-flex col-8">
-                                <form>
-                                    <p class="clasificacion">
-                                      <input id="radio1" type="radio" name="estrellas" value="5"><!--
-                                      --><label for="radio1">★</label><!--
-                                      --><input id="radio2" type="radio" name="estrellas" value="4"><!--
-                                      --><label for="radio2">★</label><!--
-                                      --><input id="radio3" type="radio" name="estrellas" value="3"><!--
-                                      --><label for="radio3">★</label><!--
-                                      --><input id="radio4" type="radio" name="estrellas" value="2"><!--
-                                      --><label for="radio4">★</label><!--
-                                      --><input id="radio5" type="radio" name="estrellas" value="1"><!--
-                                      --><label for="radio5">★</label>
-                                    </p>
-                                </form>
-                            </div>
-                            <div class="d-flex col-4 justify-content-end">
-                                <img class="img-fluid iconoLocationCard" src="./assets/img/location.png" alt="">
-                                <p class="distanciaCard">0.1 Km.</p>
-                            </div>
-                        </div>
-                    </div>
-
-
-                    <div class="card" style="width: 30%;">
-                        <img src="./assets/img/Rectangle 101.jpg" class="card-img-top" alt="...">
-                        <span class="position-absolute top-10 start-0 badgeNuevo translate-middle badge rounded-pill text-bg-primary">
-                            <i class="fa-solid white fa-bolt"></i> Nuevo
-                        </span>
-                        <div class="d-flex col-12">
-                            <div class="card-body col-9">
-                                <h5 class="tituloCard">Mc Donald's</h5>
-                                <p class="textoCard">Hola, esto es una re picada</p>
-                            </div>
-                            <div class="card-body col-3 text-center">
-                                <p class="demoraTarjeta">25 - 40 Min</p>
-                            </div>
-                        </div>
-                        <div class="d-flex justify-content-between card-footer">
-                            <div class="contenedorCalificacion d-flex col-8">
-                                <form>
-                                    <p class="clasificacion">
-                                      <input id="radio1" type="radio" name="estrellas" value="5"><!--
-                                      --><label for="radio1">★</label><!--
-                                      --><input id="radio2" type="radio" name="estrellas" value="4"><!--
-                                      --><label for="radio2">★</label><!--
-                                      --><input id="radio3" type="radio" name="estrellas" value="3"><!--
-                                      --><label for="radio3">★</label><!--
-                                      --><input id="radio4" type="radio" name="estrellas" value="2"><!--
-                                      --><label for="radio4">★</label><!--
-                                      --><input id="radio5" type="radio" name="estrellas" value="1"><!--
-                                      --><label for="radio5">★</label>
-                                    </p>
-                                </form>
-                            </div>
-                            <div class="d-flex col-4 justify-content-end">
-                                <img class="img-fluid iconoLocationCard" src="./assets/img/location.png" alt="">
-                                <p class="distanciaCard">0.1 Km.</p>
-                            </div>
-                        </div>
-                    </div>
-
                 </div>
             </div>
         </section>
@@ -468,14 +293,14 @@
     <footer>
         <section class="footer">
             <div class="d-flex justify-content-center pt-5 pb-5">
-                <div class="col-2 text-center">
+                <div class="col-12 col-md-2 text-center">
                     <img class="img-fluid logoFooter" src="./assets/img/logo_nav.png" alt="">
                     <p>La app de delivery</p>
                     <p>del Interior</p>
                 </div>
             </div>
-            <div class="col-12 d-flex text-center justify-content-center">
-                <div class="col-2">
+            <div class="col-12 d-flex text-center justify-content-center flex-wrap">
+                <div class="col-md-2 col-12 mt-4">
                     <p class="subtituloFooter">CONOCÉ MÁS SOBRE VICI</p>
                     <p class="textoFooter">Sobre Nosotros</p>
                     <p class="textoFooter">Inversores</p>
@@ -483,21 +308,21 @@
                     <p class="textoFooter">Quiero ser parte de VICI</p>
                 </div>
 
-                <div class="col-2">
+                <div class="col-md-2 col-12 mt-4">
                     <p class="subtituloFooter">PRIVACIDAD</p>
                     <p class="textoFooter">Política de privacidad</p>
                     <p class="textoFooter">Términos y condiciones</p>
                     <p class="textoFooter">Política de cookies</p>
                 </div>
 
-                <div class="col-2">
+                <div class="col-md-2 col-12 mt-4">
                     <p class="subtituloFooter">COMUNIDAD VICI</p>
                     <p class="textoFooter">Atención al cliente</p>
                     <p class="textoFooter">Newsletter</p>
                     <p class="textoFooter">Blog</p>
                 </div>
 
-                <div class="col-2">
+                <div class="col-md-2 col-12 mt-4">
                     <p class="subtituloFooter">NUESTRAS REDES</p>
                     <p class="textoFooter"><i class="fa-brands fa-instagram"></i> Instagram</p>
                     <p class="textoFooter"><i class="fa-brands fa-facebook-f"></i> Facebook</p>

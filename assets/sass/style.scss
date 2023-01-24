@@ -47,6 +47,7 @@ h2 {
     color: white;
 }
 
+
 // FUENTES //
 :root {
     --font-default: "Open Sans", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
@@ -77,8 +78,7 @@ h2 {
     background-color: var(--color-primario);
     border: solid 2px var(--color-primario);
     border-radius: 20px;
-    padding: 10px 30px;
-    margin: 0px 15px 0px 0px;
+    padding: 10px 20px;
     color: white;
     font-weight: bold;
     font-size: .9em;
@@ -92,7 +92,7 @@ h2 {
     background-color: white;
     border: solid 2px var(--color-primario);
     border-radius: 20px;
-    padding: 10px 30px;
+    padding: 10px 20px;
     font-weight: bold;
     font-size: .9em;
     color: var(--color-primario);
@@ -101,6 +101,23 @@ h2 {
         color: white;
     }
 }
+
+@media (min-width: 768px) {
+    .separarBoton {
+        margin-right: 5px;
+    }
+}
+
+@media (max-width: 767px) {
+    .botonPrimario {
+        margin-top: 5px;
+    }
+    .botonSecundario {
+        margin-top: 5px;
+    }
+}
+
+
 
 .botonPedir {
     background-color: var(--color-primario);
@@ -236,6 +253,15 @@ input {
     padding: 130px 5% 50px 5%;
 }
 
+.secondaryNavbar {
+    padding-top: 130px;
+    padding-bottom: 15px;
+    padding-left: 5%;
+    padding-right: 5%;
+    max-width: 100%;
+    text-align: center;
+}
+
 
 // HOME // 
 
@@ -243,6 +269,18 @@ input {
     font-weight: bold;
     font-size: 1.4rem;
     color: var(--color-secundario)
+}
+
+// PROMOS EN TU CIUDAD
+
+.contenedorTarjetas1 {
+    max-width: 100%;
+}
+
+.tarjeta1 {
+    object-fit: cover;
+    height: auto;
+    width: 100%;
 }
 
     // TARJETAS //
@@ -259,7 +297,7 @@ input {
 .card-img-top {
     border-radius: 50px 50px 0px 0px;
     object-fit: cover;
-    height: 200px;
+    height: 150px;
 }
 
 .tituloCard {
@@ -275,7 +313,7 @@ input {
 .demoraTarjeta {
     font-weight: bold;
     color: var(--color-cuaternario);
-    font-size: 1rem;
+    font-size: .8rem;
 }
 
 .card-body {
@@ -302,6 +340,7 @@ input {
 
 .iconoLocationCard {
     margin-right: 10px;
+    object-fit:scale-down;
 }
 
     // CALIFICACIÓN // 
