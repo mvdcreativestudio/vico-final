@@ -747,6 +747,14 @@ input {
         box-shadow: 0px 5px 5px 2px rgba(0,0,0,0.13);
         -webkit-box-shadow: 0px 5px 5px 2px rgba(0,0,0,0.13);
         -moz-box-shadow: 0px 5px 5px 2px rgba(0,0,0,0.13);
+        min-width: 250px!important;
+    }
+
+    .contenedorChanguitoLateral {
+        @media (max-width: 1199px) {
+            margin-top: 60px;
+            min-width: auto;
+        }
     }
 
     .tituloTuPedido {
