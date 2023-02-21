@@ -162,7 +162,23 @@ h2 {
   padding: 5px 20px;
 }
 
-.nav {
+.navDesktop {
+  height: 100px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 5%;
+  padding-right: 5%;
+  border-radius: 0px 0px 30px 30px;
+  box-shadow: 1px 8px 10px 0px rgba(0, 0, 0, 0.15);
+  -webkit-box-shadow: 1px 8px 10px 0px rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: 1px 8px 10px 0px rgba(0, 0, 0, 0.15);
+  position: fixed;
+  z-index: 2;
+  background-color: white;
+  margin-bottom: 120px;
+}
+
+.navMobile {
   height: 100px;
   padding-top: 15px;
   padding-bottom: 15px;
@@ -214,6 +230,12 @@ input:focus-visible {
 
 .contenedorBotonesNav {
   align-items: center;
+  justify-content: flex-end;
+}
+@media (max-width: 768px) {
+  .contenedorBotonesNav {
+    justify-content: center !important;
+  }
 }
 
 .navbarSecundario {
@@ -231,7 +253,7 @@ input:focus-visible {
 
 .tituloHome {
   font-weight: bold;
-  font-size: 1.4rem;
+  font-size: 14rem;
   color: var(--color-secundario);
 }
 
@@ -240,8 +262,12 @@ input:focus-visible {
 }
 
 .tarjeta1 {
+<<<<<<< HEAD
   -o-object-fit: cover;
      object-fit: cover;
+=======
+  object-fit: cover;
+>>>>>>> 9fd93bb (Jue 16 feb)
   height: auto;
   width: 100%;
 }
@@ -256,8 +282,12 @@ input:focus-visible {
 
 .card-img-top {
   border-radius: 50px 50px 0px 0px;
+<<<<<<< HEAD
   -o-object-fit: cover;
      object-fit: cover;
+=======
+  object-fit: cover;
+>>>>>>> 9fd93bb (Jue 16 feb)
   height: 150px;
 }
 
@@ -299,8 +329,12 @@ input:focus-visible {
 
 .iconoLocationCard {
   margin-right: 10px;
+<<<<<<< HEAD
   -o-object-fit: scale-down;
      object-fit: scale-down;
+=======
+  object-fit: scale-down;
+>>>>>>> 9fd93bb (Jue 16 feb)
 }
 
 label {
@@ -480,8 +514,12 @@ input[type=radio]:checked ~ label {
 .img-producto {
   width: 90%;
   height: 100%;
+<<<<<<< HEAD
   -o-object-fit: cover;
      object-fit: cover;
+=======
+  object-fit: cover;
+>>>>>>> 9fd93bb (Jue 16 feb)
 }
 
 .contenedorImagenModalProducto {
